@@ -15,7 +15,7 @@ const getAllBooks = async (req, res, next) => {
 };
 
 const getById = async (req, res, next) => {
-  const id = req.params.id;
+  const id = req.params.id;  // get the id from the url
   let book;
   try {
     book = await Book.findById(id);

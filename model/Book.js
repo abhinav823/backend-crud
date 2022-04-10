@@ -1,6 +1,6 @@
-const mongoose = require("mongoose");
+const mongoose = require("mongoose");  //mongoose is a library that helps us connect to mongodb
 
-const Schema = mongoose.Schema;
+const Schema = mongoose.Schema;  // schema is a property of mongoose that helps us to create a schema
 
 const bookSchema = new Schema({
   name: {
@@ -28,4 +28,4 @@ const bookSchema = new Schema({
   },
 });
 
-module.exports = mongoose.model("Book", bookSchema);
+module.exports = mongoose.model("Book", bookSchema);  
